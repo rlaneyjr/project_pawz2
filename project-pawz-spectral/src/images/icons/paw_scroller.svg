@@ -1,0 +1,525 @@
+<svg class="paw_scroller" xmlns="http://www.w3.org/2000/svg" width="50" height="100" viewBox="0 0 50 100" id="paw_scroller">
+<defs>
+  <style>
+
+    <!-- Begin Document Level Elements -->
+    #paw_scroller * {
+      fill: #AAABB8;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+      animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    <!-- End Document Level Elements -->
+
+    <!-- Begin paw_1 Opacity Animation -->
+    #paw_1_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_1_path_id_animation;
+      animation-name: paw_1_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_1_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      13% {
+        opacity: 0;
+      }
+      27% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_1_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      13% {
+        opacity: 0;
+      }
+      27% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_1 Movement Animation -->
+    #paw_1 {
+      -webkit-animation-name: paw_1_animation;
+      animation-name: paw_1_animation;
+    }
+
+    @-webkit-keyframes paw_1_animation {
+      0% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, -100px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, -100px);
+      }
+      17% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_1_animation {
+      0% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, -100px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, -100px);
+      }
+      17% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+        transform: translate(14px, 9px) translate(-14px, -9px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_1 Animation -->
+
+    <!-- Begin paw_2 Opacity Animation -->
+    #paw_2_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_2_path_id_animation;
+      animation-name: paw_2_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_2_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      23% {
+        opacity: 0;
+      }
+      37% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_2_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      23% {
+        opacity: 0;
+      }
+      37% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_2 Movement Animation -->
+    #paw_2 {
+      -webkit-animation-name: paw_2_animation;
+      animation-name: paw_2_animation;
+    }
+
+    @-webkit-keyframes paw_2_animation {
+      0% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+      }
+      10% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+      }
+      27% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_2_animation {
+      0% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+      }
+      10% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, -100px);
+      }
+      27% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+        transform: translate(36px, 23px) translate(-36px, -23px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_2 Animation -->
+
+    <!-- Begin paw_3 Opacity Animation -->
+    #paw_3_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_3_path_id_animation;
+      animation-name: paw_3_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_3_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      33% {
+        opacity: 0;
+      }
+      47% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_3_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      33% {
+        opacity: 0;
+      }
+      47% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_3 Movement Animation -->
+    #paw_3 {
+      -webkit-animation-name: paw_3_animation;
+      animation-name: paw_3_animation;
+    }
+
+    @-webkit-keyframes paw_3_animation {
+      0% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+      }
+      20% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+      }
+      37% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_3_animation {
+      0% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+      }
+      20% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, -100px);
+      }
+      37% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+        transform: translate(14px, 37px) translate(-14px, -37px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_3 Animation -->
+
+    <!-- Begin paw_4 Opacity Animation -->
+    #paw_4_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_4_path_id_animation;
+      animation-name: paw_4_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_4_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      43% {
+        opacity: 0;
+      }
+      57% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_4_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      43% {
+        opacity: 0;
+      }
+      57% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_4 Movement Animation -->
+    #paw_4 {
+      -webkit-animation-name: paw_4_animation;
+      animation-name: paw_4_animation;
+    }
+
+    @-webkit-keyframes paw_4_animation {
+      0% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);}
+      30% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);}
+      47% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);}
+      100% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_4_animation {
+      0% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);}
+      30% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, -100px);}
+      47% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);}
+      100% {
+        -webkit-transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+        transform: translate(36px, 51px) translate(-36px, -51px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_4 Animation -->
+
+    <!-- Begin paw_5 Opacity Animation -->
+    #paw_5_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_5_path_id_animation;
+      animation-name: paw_5_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_5_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      53% {
+        opacity: 0;
+      }
+      67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_5_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      53% {
+        opacity: 0;
+      }
+      67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_5 Movement Animation -->
+    #paw_5 {
+      -webkit-animation-name: paw_5_animation;
+      animation-name: paw_5_animation;
+    }
+
+    @-webkit-keyframes paw_5_animation {
+      0% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+      }
+      40% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+      }
+      57% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_5_animation {
+      0% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+      }
+      40% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, -100px);
+      }
+      57% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+        transform: translate(15px, 65px) translate(-15px, -65px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_5 Animation -->
+
+    <!-- Begin paw_6 Opacity Animation -->
+    #paw_6_path_id {
+      -webkit-transform: translate(-4px, -1px);
+      transform: translate(-4px, -1px);
+      -webkit-animation-name: paw_6_path_id_animation;
+      animation-name: paw_6_path_id_animation;
+    }
+
+    @-webkit-keyframes paw_6_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      63% {
+        opacity: 0;
+      }
+      77% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw_6_path_id_animation {
+      0% {
+        opacity: 0;
+      }
+      63% {
+        opacity: 0;
+      }
+      77% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    <!-- Begin paw_6 Movement Animation -->
+    #paw_6 {
+      -webkit-animation-name: paw_6_animation;
+      animation-name: paw_6_animation;
+    }
+
+    @-webkit-keyframes paw_6_animation {
+      0% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+      }
+      50% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+      }
+      67% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw_6_animation {
+      0% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+      }
+      50% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, -100px);
+      }
+      67% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+        transform: translate(37px, 79px) translate(-37px, -79px) translate(0px, 0px);
+      }
+    }
+    <!-- End paw_6 Animation -->
+    </style>
+  </defs>
+
+  <title>paw_scroller</title>
+
+  <g id="paws" class="paws">
+    <g id="paw_1" data-animator-group="true" data-animator-type="0">
+      <path d="M9,3.05C8.94.94,11.22.89,12.14,1.33A17.38,17.38,0,0,0,15,2.15a17.47,17.47,0,0,0,3,.22c1-.1,3.15.73,2.35,2.68s-2.72,1.52-3.74,4.16a2.79,2.79,0,0,1-3.23,2.07s-2.27-.22-2.32-3S9.1,5.15,9,3.05m2.34,8.05c-1.13-.56-2.62.15-3.32,1.58a2.65,2.65,0,0,0,.78,3.6,2.64,2.64,0,0,0,3.32-1.59c.7-1.43.35-3-.78-3.59m-5-.32A2.64,2.64,0,0,0,9.78,9.55,2.63,2.63,0,0,0,9.39,5.9,2.64,2.64,0,0,0,5.92,7.12a2.65,2.65,0,0,0,.39,3.66m9.13,1c-1.26.13-2.13,1.53-2,3.11a2.64,2.64,0,0,0,2.58,2.62,2.66,2.66,0,0,0,2-3.11c-.17-1.58-1.33-2.76-2.58-2.62m3.63-4.21a2.62,2.62,0,0,0-1.62,3.29,2.63,2.63,0,0,0,2.84,2.34,2.64,2.64,0,0,0,1.62-3.3c-.34-1.56-1.61-2.6-2.84-2.33" id="paw_1_path_id"/>
+    </g>
+    <g id="paw_2" data-animator-group="true" data-animator-type="0">
+      <path d="M40.9,17.07c.08-2.1-2.2-2.16-3.12-1.72a16.75,16.75,0,0,1-2.89.83,17.82,17.82,0,0,1-3,.21c-1-.09-3.15.74-2.35,2.69s2.72,1.52,3.74,4.16A2.78,2.78,0,0,0,36.5,25.3s2.27-.21,2.32-3,2-3.08,2.08-5.19m-2.34,8.05a2.64,2.64,0,0,1,3.32,1.59c.7,1.43.35,3-.78,3.59a2.63,2.63,0,0,1-3.32-1.58,2.65,2.65,0,0,1,.78-3.6m5-.32a2.64,2.64,0,0,1-3.47-1.22,2.65,2.65,0,0,1,.39-3.66A2.64,2.64,0,0,1,44,21.15a2.63,2.63,0,0,1-.39,3.65m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.33,2.76-2.58,2.62a2.63,2.63,0,0,1-2-3.1,2.64,2.64,0,0,1,2.57-2.63m-3.63-4.21a2.63,2.63,0,0,1,1.62,3.3,2.63,2.63,0,0,1-2.84,2.33C28.4,27,27.68,25.52,28,24s1.61-2.61,2.84-2.34" id="paw_2_path_id"/>
+    </g>
+    <g id="paw_3" data-animator-group="true" data-animator-type="0">
+      <path d="M9.35,31.1c-.08-2.11,2.2-2.16,3.12-1.73a17,17,0,0,0,2.9.83,17.32,17.32,0,0,0,3,.22c1-.1,3.15.73,2.35,2.68S18,34.62,17,37.26a2.79,2.79,0,0,1-3.23,2.07s-2.27-.22-2.32-3-2-3.08-2.08-5.18m2.34,8c-1.13-.56-2.62.15-3.32,1.58a2.65,2.65,0,0,0,.78,3.6,2.64,2.64,0,0,0,3.32-1.59c.7-1.43.35-3-.78-3.59m-5-.32c1.06.67,2.61.12,3.46-1.23s.68-3-.39-3.65a2.64,2.64,0,0,0-3.47,1.22,2.64,2.64,0,0,0,.4,3.66m9.12,1c-1.25.13-2.13,1.52-2,3.11a2.63,2.63,0,0,0,2.57,2.62,2.65,2.65,0,0,0,2-3.11c-.17-1.58-1.33-2.76-2.58-2.62m3.63-4.21A2.62,2.62,0,0,0,17.78,39c.34,1.56,1.61,2.61,2.84,2.34A2.64,2.64,0,0,0,22.24,38c-.34-1.56-1.61-2.6-2.84-2.33" id="paw_3_path_id"/>
+    </g>
+    <g id="paw_4" data-animator-group="true" data-animator-type="0">
+      <path d="M40.9,45.12C41,43,38.7,43,37.78,43.4a17.76,17.76,0,0,1-2.89.83,17.82,17.82,0,0,1-3,.21c-1-.1-3.15.74-2.35,2.69s2.72,1.52,3.74,4.16a2.78,2.78,0,0,0,3.23,2.06s2.27-.21,2.32-3,2-3.08,2.08-5.19m-2.34,8.05a2.64,2.64,0,0,1,3.32,1.59c.7,1.43.35,3-.78,3.59a3,3,0,0,1-2.54-5.18m5-.32A3,3,0,0,1,40.53,48a3,3,0,0,1,3.08,4.88m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.33,2.76-2.58,2.62a3,3,0,0,1,.61-5.73m-3.63-4.21A2.63,2.63,0,0,1,32.47,53a2.63,2.63,0,0,1-2.84,2.33C28.4,55.05,27.68,53.57,28,52s1.61-2.6,2.84-2.33" id="paw_4_path_id"/>
+    </g>
+    <g id="paw_5" data-animator-group="true" data-animator-type="0">
+      <path d="M10.24,59.15C10.15,57,12.43,57,13.35,57.42a17,17,0,0,0,2.9.83,16.69,16.69,0,0,0,3,.21c1-.09,3.14.74,2.34,2.69s-2.72,1.52-3.73,4.16-3.23,2.07-3.23,2.07-2.28-.22-2.32-3-2-3.08-2.08-5.18m2.33,8.05c-1.13-.56-2.61.15-3.32,1.58a2.64,2.64,0,0,0,.79,3.6c1.13.55,2.61-.16,3.32-1.59a2.63,2.63,0,0,0-.79-3.59m-5-.33c1.07.68,2.62.13,3.47-1.22s.67-3-.4-3.65a2.64,2.64,0,0,0-3.47,1.22,2.62,2.62,0,0,0,.4,3.65m9.12,1c-1.25.13-2.13,1.52-2,3.11a2.64,2.64,0,0,0,2.57,2.62,2.64,2.64,0,0,0,2-3.11c-.17-1.58-1.32-2.76-2.58-2.62m3.63-4.22a3,3,0,0,0,1.22,5.64,3,3,0,0,0-1.22-5.64" id="paw_5_path_id"/>
+    </g>
+    <g id="paw_6" data-animator-group="true" data-animator-type="0">
+      <path d="M41.78,73.17c.09-2.11-2.19-2.16-3.12-1.72a17.76,17.76,0,0,1-2.89.83,17.72,17.72,0,0,1-3,.21c-1-.1-3.14.73-2.35,2.69s2.73,1.52,3.74,4.16a2.78,2.78,0,0,0,3.23,2.06s2.27-.22,2.32-3,2-3.08,2.08-5.19m-2.34,8A3,3,0,0,1,42,86.4c-1.13.56-2.62-.15-3.32-1.59a2.64,2.64,0,0,1,.78-3.59m5.05-.32A3,3,0,0,1,41.42,76a2.63,2.63,0,0,1,3.46,1.22c.85,1.35.68,3-.39,3.66m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.32,2.76-2.58,2.62s-2.13-1.52-2-3.11a2.64,2.64,0,0,1,2.57-2.62m-3.63-4.21A2.64,2.64,0,0,1,33.36,81c-.34,1.55-1.61,2.6-2.84,2.33s-2-1.74-1.63-3.3,1.61-2.6,2.84-2.33" id="paw_6_path_id"/>
+    </g>
+  </g>
+</svg>

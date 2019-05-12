@@ -1,7 +1,7 @@
 # PostgreSQL
 # ------------------------------------------------------------------------------
-POSTGRES_HOST=postgres
+POSTGRES_HOST=127.0.0.1
 POSTGRES_PORT=5432
 POSTGRES_DB=project_pawz
-POSTGRES_USER=BvZTBtiljtDsuOlzdBwYcgKBQotpLocK
-POSTGRES_PASSWORD=0KxwWJkxnMHg5zGj4rfiGBI7CXg33SdvuBEx1FOkQ4cI64kqN5othD9x42mMcsmZ
+POSTGRES_USER=pawzdbuser
+POSTGRES_PASSWORD=Acquire-Crested-Boozy

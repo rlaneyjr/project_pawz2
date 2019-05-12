@@ -3,18 +3,28 @@ Base settings to build other settings files upon.
 """
 
 import environ
+import os
 
 ROOT_DIR = (
     environ.Path(__file__) - 3
 )  # (project_pawz/config/settings/base.py - 3 = project_pawz/)
 APPS_DIR = ROOT_DIR.path("project_pawz")
+ENV_DIR = os.path.join(ROOT_DIR, ".envs")
 
 env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
-if READ_DOT_ENV_FILE:
-    # OS environment variables take precedence over variables from .env
-    env.read_env(str(ROOT_DIR.path(".env")))
+LOCAL_ENV = os.environ.get("LOCAL_ENV", default=False)
+PROD_ENV = os.environ.get("PROD_ENV", default=False)
+READ_DOT_ENV_DIRS = env.bool("DJANGO_READ_DOT_ENV_DIRS", default=False)
+if READ_DOT_ENV_DIRS:
+    if LOCAL_ENV:
+        for env_file in os.listdir(os.path.join(ENV_DIR, ".local")):
+            if os.path.isfile(env_file):
+                env.read_env(env_file)
+    elif PROD_ENV:
+        for env_file in os.listdir(os.path.join(ENV_DIR, ".production")):
+            if os.path.isfile(env_file):
+                env.read_env(env_file)
 
 # GENERAL
 # ------------------------------------------------------------------------------
@@ -24,7 +34,7 @@ DEBUG = env.bool("DJANGO_DEBUG", False)
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # though not all of them may be available with every OS.
 # In Windows, this must be set to your system time zone.
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/New_York"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = "en-us"
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
@@ -39,7 +49,7 @@ USE_TZ = True
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
-DATABASES = {"default": env.db("DATABASE_URL")}
+DATABASES = {"default": env.db("DATABASE_URL", default="postgres:///project_pawz")}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 # URLS
@@ -58,7 +68,7 @@ DJANGO_APPS = [
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # "django.contrib.humanize", # Handy template tags
+    "django.contrib.humanize", # Handy template tags
     "django.contrib.admin",
 ]
 THIRD_PARTY_APPS = [
@@ -71,6 +81,12 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "project_pawz.users.apps.UsersAppConfig",
     # Your stuff: custom apps go here
+    #'project_pawz.dogs.apps.DogsAppConfig',
+    #'project_pawz.donations.apps.DonationsAppConfig',
+    #'project_pawz.events.apps.EventsAppConfig',
+    #'project_pawz.fosters.apps.FostersAppConfig',
+    #'project_pawz.sponsorships.apps.SponsorshipsAppConfig',
+    #'project_pawz.volunteers.apps.VolunteersAppConfig',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

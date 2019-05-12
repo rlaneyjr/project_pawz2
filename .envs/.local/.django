@@ -1,4 +1,14 @@
-# General
+# Redis
 # ------------------------------------------------------------------------------
-USE_DOCKER=yes
-IPYTHONDIR=/app/.ipython
+REDIS_URL=redis://127.0.0.1:6379/0
+
+# SendGrid API (to send Emails)
+# ------------------------------------------------------------------------------
+SENDGRID_API_KEY='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'
+
+# SendGrid SMTP (to send Emails)
+# ------------------------------------------------------------------------------
+SENDGRID_SERVER=smtp.sendgrid.net
+SENDGRID_PORT=465 # 25, 587 for unencrypted/TLS connections or 465 for SSL connections
+SENDGRID_USERNAME=apikey
+SENDGRID_PASSWORD='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'

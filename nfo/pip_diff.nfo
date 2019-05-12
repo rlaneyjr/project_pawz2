@@ -1,0 +1,39 @@
+# Old Project Installs end with !.  New project installs do not.
+# ============================================================
+# Click
+# appdirs
+# astroid
+# black
+# isort
+# lazy-object-proxy
+# pylint
+# pylint-django
+# pylint-plugin-utils
+# toml
+# wrapt
+
+# Unidecode!
+# boto3!
+# botocore!
+# django-anymail!
+# django-storages!
+# gunicorn!
+# jmespath!
+# psycopg2-binary!
+# python-http-client!
+# s3transfer!
+# sendgrid!
+# sphinxcontrib-websupport!
+
+Unidecode
+boto3
+botocore
+django-anymail
+django-storages
+gunicorn
+jmespath
+psycopg2-binary
+python-http-client
+s3transfer
+sendgrid
+sphinxcontrib-websupport

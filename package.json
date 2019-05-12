@@ -4,8 +4,10 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.4.7",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.14.0",
     "cssnano": "^4.1.10",
+    "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1",
@@ -13,7 +15,11 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
-    "pixrem": "^5.0.0"
+    "jquery": "^3.3.1",
+    "jquery.scrollex": "^0.2.1",
+    "pixrem": "^5.0.0",
+    "popper.js": "^1.14.7",
+    "scrolly": "^0.6.0"
   },
   "engines": {
     "node": ">=8"
