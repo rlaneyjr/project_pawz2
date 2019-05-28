@@ -1,0 +1,453 @@
+	.Global styles_Class {
+		margin: 0;
+		padding: 0;
+	}
+	.landing_page_Class {
+		position: absolute;
+		box-sizing: border-box;
+		transform: translateX(-50%) translateY(-50%);
+		left: 50%;
+		top: 50%;
+		outline: 1px solid #A1A1A1;
+		background: #E5E5E5;
+		width: 1920;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		opacity: 1;
+	}
+	.background_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	.street_paws_backgrou_Class {
+		opacity: 0.30000001192092896;
+		fill: url(#street_paws_backgrou_pattern);
+	}
+	.street_paws_backgrou {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	.About_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1141px;
+		height: 1309px;
+		left: 390px;
+		top: 908px;
+	}
+	.Project_Pawz_is_work_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 70px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 1142px;
+		height: 1239px;
+		text-align: left;
+	}
+	.About_Project_Pawz_Class {
+		opacity: 1;
+		position: absolute;
+		left: 317px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 507px;
+		height: 58px;
+		text-align: center;
+	}
+	.brand_Class {
+		opacity: 1;
+		position: absolute;
+		width: 806.2103271484375px;
+		height: 259.43170166015625px;
+		left: 0px;
+		top: 0px;
+	}
+	.brand_background_Class {
+		opacity: 1;
+		position: absolute;
+		width: 806.2103271484375px;
+		height: 259.43170166015625px;
+		left: 0px;
+		top: 0px;
+	}
+	.Path_21_Class {
+		opacity: 0.9954079985618591;
+		fill: url(#RadialGradientFill1);
+	}
+	.Path_21 {
+		overflow: visible;
+		position: absolute;
+		top: -0.00048828125px;
+		left: 0px;
+		width: 824.2099609375px;
+		height: 277.431640625px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.project_pawz_logo2_1_Class {
+		opacity: 1;
+		position: absolute;
+		width: 159.510009765625px;
+		height: 158.45001220703125px;
+		left: 16px;
+		top: 16px;
+	}
+	.brand_logo_Class {
+		opacity: 1;
+		position: absolute;
+		width: 159.510009765625px;
+		height: 158.45001220703125px;
+		left: 0px;
+		top: 0px;
+	}
+	.Group_9_Class {
+		opacity: 1;
+		position: absolute;
+		width: 159.50999450683594px;
+		height: 158.4499969482422px;
+		left: 0px;
+		top: 0px;
+	}
+	.title_words_Class {
+		opacity: 1;
+		position: absolute;
+		width: 389px;
+		height: 72px;
+		left: 190.630859375px;
+		top: 26.53173828125px;
+	}
+	.Project_Pawz_Class {
+		opacity: 0.7789239883422852;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 390px;
+		height: 72px;
+		text-align: left;
+	}
+	.motto_words_Class {
+		opacity: 1;
+		position: absolute;
+		width: 389px;
+		height: 76px;
+		left: 190.630859375px;
+		top: 73.53173828125px;
+	}
+	.Rescue__Love__Repeat_Class {
+		opacity: 0.9968069791793823;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 390px;
+		height: 76px;
+		text-align: left;
+	}
+	.Repeat_Grid_2_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1674px;
+		height: 505px;
+		left: 123px;
+		top: 307px;
+	}
+	._Class {
+		opacity: 1;
+		position: absolute;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	.Rectangle_17_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		stroke-position: inside;
+		stroke-alignment: inside;
+		stroke-location: inside;
+		shape-rendering: crispedges;
+	}
+	.Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	._2_1_2_Class {
+		opacity: 1;
+		position: absolute;
+		width: 418px;
+		height: 429px;
+		left: 418px;
+		top: 0px;
+	}
+	.Rectangle_17_3_0_3_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		stroke-position: inside;
+		stroke-alignment: inside;
+		stroke-location: inside;
+		shape-rendering: crispedges;
+	}
+	.Rectangle_17_3_0_3 {
+		position: absolute;
+		overflow: visible;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	._2_2_4_Class {
+		opacity: 1;
+		position: absolute;
+		width: 418px;
+		height: 429px;
+		left: 836px;
+		top: 0px;
+	}
+	.Rectangle_17_3_0_5_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		stroke-position: inside;
+		stroke-alignment: inside;
+		stroke-location: inside;
+		shape-rendering: crispedges;
+	}
+	.Rectangle_17_3_0_5 {
+		position: absolute;
+		overflow: visible;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	._2_3_6_Class {
+		opacity: 1;
+		position: absolute;
+		width: 418px;
+		height: 429px;
+		left: 1254px;
+		top: 0px;
+	}
+	.Rectangle_17_3_0_7_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		stroke-position: inside;
+		stroke-alignment: inside;
+		stroke-location: inside;
+		shape-rendering: crispedges;
+	}
+	.Rectangle_17_3_0_7 {
+		position: absolute;
+		overflow: visible;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	._2_4_8_Class {
+		opacity: 1;
+		position: absolute;
+		width: 418px;
+		height: 429px;
+		left: 1672px;
+		top: 0px;
+	}
+	.Rectangle_17_3_0_9_Class {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		stroke-position: inside;
+		stroke-alignment: inside;
+		stroke-location: inside;
+		shape-rendering: crispedges;
+	}
+	.Rectangle_17_3_0_9 {
+		position: absolute;
+		overflow: visible;
+		width: 418px;
+		height: 429px;
+		left: 0px;
+		top: 0px;
+	}
+	.menu_bar_large_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1061px;
+		height: 70px;
+		left: 827px;
+		top: 32px;
+	}
+	.menu_bar_background_Class {
+		opacity: 1;
+		position: absolute;
+		width: 1061px;
+		height: 70px;
+		left: 0px;
+		top: 0px;
+	}
+	.menu_bar_fill_gradie_Class {
+		opacity: 1;
+		fill: url(#RadialGradientFill10);
+	}
+	.menu_bar_fill_gradie {
+		position: absolute;
+		overflow: visible;
+		width: 1079px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	.home_menu_Class {
+		opacity: 1;
+		position: absolute;
+		width: 129px;
+		height: 43px;
+		left: 31px;
+		top: 10px;
+	}
+	.Home_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 130px;
+		height: 43px;
+		text-align: left;
+	}
+	.works_menu_Class {
+		opacity: 1;
+		position: absolute;
+		width: 128px;
+		height: 43px;
+		left: 215px;
+		top: 10px;
+	}
+	.Works_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 129px;
+		height: 43px;
+		text-align: left;
+	}
+	.participate_menu_Class {
+		opacity: 1;
+		position: absolute;
+		width: 223px;
+		height: 43px;
+		left: 398px;
+		top: 10px;
+	}
+	.Participate_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 224px;
+		height: 43px;
+		text-align: left;
+	}
+	.learn_menu_Class {
+		opacity: 1;
+		position: absolute;
+		width: 122px;
+		height: 45px;
+		left: 676px;
+		top: 10px;
+	}
+	.Learn_Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 123px;
+		height: 45px;
+		text-align: left;
+	}
+	.donate_menu_Class {
+		opacity: 1;
+		position: absolute;
+		width: 179px;
+		height: 43px;
+		left: 853px;
+		top: 11px;
+	}
+	.Dontate__Class {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 180px;
+		height: 43px;
+		text-align: left;
+	}

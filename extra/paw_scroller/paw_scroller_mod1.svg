@@ -1,0 +1,586 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 96" id="paw_scroller">
+<defs>
+  <style>
+
+    #paw_scroller * {
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+      animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+
+    #paw1_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw1_extra_id_Animation;
+      animation-name: paw1_extra_id_Animation;
+    }
+
+    #paw2_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw2_extra_id_Animation;
+      animation-name: paw2_extra_id_Animation;
+    }
+
+    #paw3_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw3_extra_id_Animation;
+      animation-name: paw3_extra_id_Animation;
+    }
+
+    #paw4_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw4_extra_id_Animation;
+      animation-name: paw4_extra_id_Animation;
+    }
+
+    #paw5_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw5_extra_id_Animation;
+      animation-name: paw5_extra_id_Animation;
+    }
+
+    #paw6_extra_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+      -webkit-animation-name: paw6_extra_id_Animation;
+      animation-name: paw6_extra_id_Animation;
+    }
+
+    #scroll_path_id {
+      fill: #fff;
+      -webkit-transform: translate(-3.66px, -1.11px);
+      transform: translate(-3.66px, -1.11px);
+    }
+
+    #paw4 {
+      -webkit-animation-name: paw4_Animation;
+      animation-name: paw4_Animation;
+    }
+
+    #paw1 {
+      -webkit-animation-name: paw1_Animation;
+      animation-name: paw1_Animation;
+    }
+
+    #paw3 {
+      -webkit-animation-name: paw3_Animation;
+      animation-name: paw3_Animation;
+    }
+
+    #paw6 {
+      -webkit-animation-name: paw6_Animation;
+      animation-name: paw6_Animation;
+    }
+
+    #paw2 {
+      -webkit-animation-name: paw2_Animation;
+      animation-name: paw2_Animation;
+    }
+
+    #paw5 {
+      -webkit-animation-name: paw5_Animation;
+      animation-name: paw5_Animation;
+    }
+
+    #scroll {
+      -webkit-animation-name: scroll_Animation;
+      animation-name: scroll_Animation;
+    }
+
+    #scroll_extra_id {
+      -webkit-animation-name: scroll_extra_id_Animation;
+      animation-name: scroll_extra_id_Animation;
+    }
+
+    @-webkit-keyframes scroll_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      43.33% {
+        opacity: 0;
+      }
+      76.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes scroll_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      43.33% {
+        opacity: 0;
+      }
+      76.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes scroll_Animation {
+      0% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+      }
+      30% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+      }
+      66.67% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes scroll_Animation {
+      0% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+      }
+      30% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 20px);
+      }
+      66.67% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+        transform: translate(25.000001907348633px, 93.5116195678711px) translate(-25.000001907348633px, -93.5116195678711px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw5_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      63.33% {
+        opacity: 0;
+      }
+      76.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw5_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      63.33% {
+        opacity: 0;
+      }
+      76.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw5_Animation {
+      0% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+      }
+      50% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+      }
+      66.67% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw5_Animation {
+      0% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+      }
+      50% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, -100px);
+      }
+      66.67% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+        transform: translate(37.108530044555664px, 79.42497634887695px) translate(-37.108530044555664px, -79.42497634887695px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw2_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      53.33% {
+        opacity: 0;
+      }
+      66.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw2_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      53.33% {
+        opacity: 0;
+      }
+      66.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw2_Animation {
+      0% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+      }
+      40% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+      }
+      56.67% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw2_Animation {
+      0% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+      }
+      40% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, -100px);
+      }
+      56.67% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+        transform: translate(14.852438926696777px, 65.42599487304688px) translate(-14.852438926696777px, -65.42599487304688px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw6_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      43.33% {
+        opacity: 0;
+      }
+      56.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw6_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      43.33% {
+        opacity: 0;
+      }
+      56.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw6_Animation {
+      0% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);}
+      30% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);}
+      46.67% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);}
+      100% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw6_Animation {
+      0% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);}
+      30% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, -100px);}
+      46.67% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);}
+      100% {
+        -webkit-transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+        transform: translate(36.14972972869873px, 51.4078483581543px) translate(-36.14972972869873px, -51.4078483581543px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw3_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      33.33% {
+        opacity: 0;
+      }
+      46.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw3_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      33.33% {
+        opacity: 0;
+      }
+      46.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw3_Animation {
+      0% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+      }
+      20% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+      }
+      36.67% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw3_Animation {
+      0% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+      }
+      20% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, -100px);
+      }
+      36.67% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+        transform: translate(14.06624460220337px, 37.357625007629395px) translate(-14.06624460220337px, -37.357625007629395px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw1_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      23.33% {
+        opacity: 0;
+      }
+      36.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw1_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      23.33% {
+        opacity: 0;
+      }
+      36.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw1_Animation {
+      0% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+      }
+      10% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+      }
+      26.67% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw1_Animation {
+      0% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+      }
+      10% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, -100px);
+      }
+      26.67% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+        transform: translate(36.24306011199951px, 23.33592700958252px) translate(-36.24306011199951px, -23.33592700958252px) translate(0px, 0px);
+      }
+    }
+
+    @-webkit-keyframes paw4_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      13.33% {
+        opacity: 0;
+      }
+      26.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes paw4_extra_id_Animation {
+      0% {
+        opacity: 0;
+      }
+      13.33% {
+        opacity: 0;
+      }
+      26.67% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes paw4_Animation {
+      0% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, -100px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, -100px);
+      }
+      16.67% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+      }
+    }
+
+    @keyframes paw4_Animation {
+      0% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, -100px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, -100px);
+      }
+      16.67% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+      }
+      100% {
+        -webkit-transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+        transform: translate(13.700231552124023px, 9.309336185455322px) translate(-13.700231552124023px, -9.309336185455322px) translate(0px, 0px);
+      }
+    }
+
+    </style>
+  </defs>
+
+  <title>paw_scroller</title>
+
+  <g id="paws">
+    <g id="paw1" data-animator-group="true" data-animator-type="0"><path d="M40.9,17.07c.08-2.1-2.2-2.16-3.12-1.72a16.75,16.75,0,0,1-2.89.83,17.82,17.82,0,0,1-3,.21c-1-.09-3.15.74-2.35,2.69s2.72,1.52,3.74,4.16A2.78,2.78,0,0,0,36.5,25.3s2.27-.21,2.32-3,2-3.08,2.08-5.19m-2.34,8.05a2.64,2.64,0,0,1,3.32,1.59c.7,1.43.35,3-.78,3.59a2.63,2.63,0,0,1-3.32-1.58,2.65,2.65,0,0,1,.78-3.6m5-.32a2.64,2.64,0,0,1-3.47-1.22,2.65,2.65,0,0,1,.39-3.66A2.64,2.64,0,0,1,44,21.15a2.63,2.63,0,0,1-.39,3.65m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.33,2.76-2.58,2.62a2.63,2.63,0,0,1-2-3.1,2.64,2.64,0,0,1,2.57-2.63m-3.63-4.21a2.63,2.63,0,0,1,1.62,3.3,2.63,2.63,0,0,1-2.84,2.33C28.4,27,27.68,25.52,28,24s1.61-2.61,2.84-2.34" id="paw1_extra_id"/></g>
+    <g id="paw2" data-animator-group="true" data-animator-type="0"><path d="M10.24,59.15C10.15,57,12.43,57,13.35,57.42a17,17,0,0,0,2.9.83,16.69,16.69,0,0,0,3,.21c1-.09,3.14.74,2.34,2.69s-2.72,1.52-3.73,4.16-3.23,2.07-3.23,2.07-2.28-.22-2.32-3-2-3.08-2.08-5.18m2.33,8.05c-1.13-.56-2.61.15-3.32,1.58a2.64,2.64,0,0,0,.79,3.6c1.13.55,2.61-.16,3.32-1.59a2.63,2.63,0,0,0-.79-3.59m-5-.33c1.07.68,2.62.13,3.47-1.22s.67-3-.4-3.65a2.64,2.64,0,0,0-3.47,1.22,2.62,2.62,0,0,0,.4,3.65m9.12,1c-1.25.13-2.13,1.52-2,3.11a2.64,2.64,0,0,0,2.57,2.62,2.64,2.64,0,0,0,2-3.11c-.17-1.58-1.32-2.76-2.58-2.62m3.63-4.22a3,3,0,0,0,1.22,5.64,3,3,0,0,0-1.22-5.64" id="paw2_extra_id"/></g>
+    <g id="paw3" data-animator-group="true" data-animator-type="0"><path d="M9.35,31.1c-.08-2.11,2.2-2.16,3.12-1.73a17,17,0,0,0,2.9.83,17.32,17.32,0,0,0,3,.22c1-.1,3.15.73,2.35,2.68S18,34.62,17,37.26a2.79,2.79,0,0,1-3.23,2.07s-2.27-.22-2.32-3-2-3.08-2.08-5.18m2.34,8c-1.13-.56-2.62.15-3.32,1.58a2.65,2.65,0,0,0,.78,3.6,2.64,2.64,0,0,0,3.32-1.59c.7-1.43.35-3-.78-3.59m-5-.32c1.06.67,2.61.12,3.46-1.23s.68-3-.39-3.65a2.64,2.64,0,0,0-3.47,1.22,2.64,2.64,0,0,0,.4,3.66m9.12,1c-1.25.13-2.13,1.52-2,3.11a2.63,2.63,0,0,0,2.57,2.62,2.65,2.65,0,0,0,2-3.11c-.17-1.58-1.33-2.76-2.58-2.62m3.63-4.21A2.62,2.62,0,0,0,17.78,39c.34,1.56,1.61,2.61,2.84,2.34A2.64,2.64,0,0,0,22.24,38c-.34-1.56-1.61-2.6-2.84-2.33" id="paw3_extra_id"/></g>
+    <g id="paw4" data-animator-group="true" data-animator-type="0"><path d="M9,3.05C8.94.94,11.22.89,12.14,1.33A17.38,17.38,0,0,0,15,2.15a17.47,17.47,0,0,0,3,.22c1-.1,3.15.73,2.35,2.68s-2.72,1.52-3.74,4.16a2.79,2.79,0,0,1-3.23,2.07s-2.27-.22-2.32-3S9.1,5.15,9,3.05m2.34,8.05c-1.13-.56-2.62.15-3.32,1.58a2.65,2.65,0,0,0,.78,3.6,2.64,2.64,0,0,0,3.32-1.59c.7-1.43.35-3-.78-3.59m-5-.32A2.64,2.64,0,0,0,9.78,9.55,2.63,2.63,0,0,0,9.39,5.9,2.64,2.64,0,0,0,5.92,7.12a2.65,2.65,0,0,0,.39,3.66m9.13,1c-1.26.13-2.13,1.53-2,3.11a2.64,2.64,0,0,0,2.58,2.62,2.66,2.66,0,0,0,2-3.11c-.17-1.58-1.33-2.76-2.58-2.62m3.63-4.21a2.62,2.62,0,0,0-1.62,3.29,2.63,2.63,0,0,0,2.84,2.34,2.64,2.64,0,0,0,1.62-3.3c-.34-1.56-1.61-2.6-2.84-2.33" id="paw4_extra_id"/></g>
+    <g id="paw5" data-animator-group="true" data-animator-type="0"><path d="M41.78,73.17c.09-2.11-2.19-2.16-3.12-1.72a17.76,17.76,0,0,1-2.89.83,17.72,17.72,0,0,1-3,.21c-1-.1-3.14.73-2.35,2.69s2.73,1.52,3.74,4.16a2.78,2.78,0,0,0,3.23,2.06s2.27-.22,2.32-3,2-3.08,2.08-5.19m-2.34,8A3,3,0,0,1,42,86.4c-1.13.56-2.62-.15-3.32-1.59a2.64,2.64,0,0,1,.78-3.59m5.05-.32A3,3,0,0,1,41.42,76a2.63,2.63,0,0,1,3.46,1.22c.85,1.35.68,3-.39,3.66m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.32,2.76-2.58,2.62s-2.13-1.52-2-3.11a2.64,2.64,0,0,1,2.57-2.62m-3.63-4.21A2.64,2.64,0,0,1,33.36,81c-.34,1.55-1.61,2.6-2.84,2.33s-2-1.74-1.63-3.3,1.61-2.6,2.84-2.33" id="paw5_extra_id"/></g>
+    <g id="paw6" data-animator-group="true" data-animator-type="0"><path d="M40.9,45.12C41,43,38.7,43,37.78,43.4a17.76,17.76,0,0,1-2.89.83,17.82,17.82,0,0,1-3,.21c-1-.1-3.15.74-2.35,2.69s2.72,1.52,3.74,4.16a2.78,2.78,0,0,0,3.23,2.06s2.27-.21,2.32-3,2-3.08,2.08-5.19m-2.34,8.05a2.64,2.64,0,0,1,3.32,1.59c.7,1.43.35,3-.78,3.59a3,3,0,0,1-2.54-5.18m5-.32A3,3,0,0,1,40.53,48a3,3,0,0,1,3.08,4.88m-9.13,1a2.64,2.64,0,0,1,2,3.11c-.17,1.58-1.33,2.76-2.58,2.62a3,3,0,0,1,.61-5.73m-3.63-4.21A2.63,2.63,0,0,1,32.47,53a2.63,2.63,0,0,1-2.84,2.33C28.4,55.05,27.68,53.57,28,52s1.61-2.6,2.84-2.33" id="paw6_extra_id"/></g>
+  </g>
+  <g id="scroll" data-animator-group="true" data-animator-type="0"><g id="scroll_extra_id">
+    <path d="M9.08,95.51a2.12,2.12,0,0,1-.83,1.78A3.6,3.6,0,0,1,6,97.92a8,8,0,0,1-1.34-.1,4.6,4.6,0,0,1-1-.3v-1a6,6,0,0,0,1.08.35A5.3,5.3,0,0,0,6.06,97a2.32,2.32,0,0,0,1.44-.37,1.21,1.21,0,0,0,.5-1,1.31,1.31,0,0,0-.18-.71,1.64,1.64,0,0,0-.63-.53A11.1,11.1,0,0,0,6,93.84a4.14,4.14,0,0,1-1.66-1,2.21,2.21,0,0,1-.55-1.57,1.94,1.94,0,0,1,.35-1.16,2.22,2.22,0,0,1,1-.76,3.69,3.69,0,0,1,1.43-.26,5.72,5.72,0,0,1,2.36.48l-.33.92a6.26,6.26,0,0,0-1-.32,4.32,4.32,0,0,0-1.08-.14,1.84,1.84,0,0,0-1.21.35,1.12,1.12,0,0,0-.41.9A1.33,1.33,0,0,0,5,92a1.61,1.61,0,0,0,.59.52A6.77,6.77,0,0,0,6.74,93,6.89,6.89,0,0,1,8,93.63a2.37,2.37,0,0,1,.8.77A2.07,2.07,0,0,1,9.08,95.51Zm5.4-5.45A2.72,2.72,0,0,0,12.3,91a3.79,3.79,0,0,0-.79,2.53,4,4,0,0,0,.74,2.53,2.65,2.65,0,0,0,2.21.93,6.05,6.05,0,0,0,1.06-.1,8.56,8.56,0,0,0,1-.24v.94a4.81,4.81,0,0,1-1,.26,7.26,7.26,0,0,1-1.22.08,4,4,0,0,1-2.19-.54,3.33,3.33,0,0,1-1.31-1.53,5.85,5.85,0,0,1-.44-2.34,5.18,5.18,0,0,1,.48-2.29,3.6,3.6,0,0,1,1.39-1.55,4.31,4.31,0,0,1,2.25-.55,5.29,5.29,0,0,1,2.36.5l-.43.91a6,6,0,0,0-.88-.32A3.62,3.62,0,0,0,14.48,90.06Zm6.27-.82a3.79,3.79,0,0,1,2.36.6,2.21,2.21,0,0,1,.76,1.83,2.29,2.29,0,0,1-.25,1.14,2.08,2.08,0,0,1-.64.73,2.9,2.9,0,0,1-.82.42l2.35,3.84H23.25l-2.08-3.54h-1.7V97.8H18.39V89.24Zm-.06.93H19.47v3.18h1.28a2.35,2.35,0,0,0,1.53-.41,1.52,1.52,0,0,0,.48-1.22,1.33,1.33,0,0,0-.51-1.19A2.68,2.68,0,0,0,20.69,90.17Zm12.64,3.34a5.55,5.55,0,0,1-.45,2.32,3.51,3.51,0,0,1-1.33,1.54,4,4,0,0,1-2.17.55,4,4,0,0,1-2.21-.55,3.35,3.35,0,0,1-1.32-1.55,5.75,5.75,0,0,1-.43-2.32,5.65,5.65,0,0,1,.43-2.3,3.32,3.32,0,0,1,1.32-1.54,4.08,4.08,0,0,1,2.22-.56,4,4,0,0,1,2.16.55,3.4,3.4,0,0,1,1.33,1.54A5.55,5.55,0,0,1,33.33,93.51Zm-6.77,0a4.26,4.26,0,0,0,.68,2.55,2.49,2.49,0,0,0,2.14.93,2.45,2.45,0,0,0,2.13-.93,5.14,5.14,0,0,0,0-5.09,2.47,2.47,0,0,0-2.13-.92,2.53,2.53,0,0,0-2.15.92A4.21,4.21,0,0,0,26.56,93.51Zm8.66,4.29V89.24H36.3v7.6h3.75v1Zm6.29,0V89.24h1.08v7.6h3.75v1Z" id="scroll_path_id"/>
+  </g></g>
+</svg>

@@ -4,75 +4,205 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{% block title %}Project Pawz{% endblock title %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Rescue. Love. Repeat.">
+    <meta name="author" content="Ricky Laney">
+    <meta name="keywords" content="animal, rescue, save, shelter, dogs, cats">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
-    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+    <link rel="icon" href="{% static 'images/icons/favicon.ico' %}">
+    <link rel="shortcut icon" href="{% static 'images/icons/favicon.ico' %}" type="image/x-icon">
 
     {% block css %}
     
     <!-- Latest compiled and minified Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {# <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> #}
     
 
     <!-- Your stuff: Third-party CSS libraries go here -->
     {% compress css %}
     <!-- This file stores project-specific CSS -->
     
-    <link href="{% static 'css/project.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    {# <link href="{% static 'css/project.css' %}" rel="stylesheet"> #}
     
+    <noscript>
+      <link href="{% static 'css/noscript.css' %}" rel="stylesheet">
+    </noscript>
+
     {% endcompress %}
     {% endblock %}
 
   </head>
 
-  <body>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-    <div class="mb-1">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="{% url 'home' %}">Project Pawz</a>
+      <!-- Header -->
+      <header id="header" class="alt">
+        <!-- <h1><a href="index.html">Project Pawz</a></h1> -->
+        <h1>
+          <a href="{% url 'home' %}">
+            <img src="{% static 'images/brand/brand_dark.svg' %}" alt="" height="70px">
+          </a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"></a>
+              <div id="menu">
+                <ul>
+                  <li>
+                    <a href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li>
+                    <a href="{% url 'about' %}">About</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}">Elements</a>
+                  </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                  {% if request.user.is_authenticated %}
+                  <li>
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
+                  </li>
+                  <li>
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
+                  </li>
+                  {% else %}
+                  <li>
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a id="sign-up-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
+                  </li>
+                  <li>
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a id="log-in-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-            </li>
-            {% if request.user.is_authenticated %}
-              <li class="nav-item">
-                {# URL provided by django-allauth/account/urls.py #}
-                <a class="nav-link" href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
-              </li>
-              <li class="nav-item">
-                {# URL provided by django-allauth/account/urls.py #}
-                <a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
-              </li>
-            {% else %}
-              <li class="nav-item">
-                {# URL provided by django-allauth/account/urls.py #}
-                <a id="sign-up-link" class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
-              </li>
-              <li class="nav-item">
-                {# URL provided by django-allauth/account/urls.py #}
-                <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
-              </li>
-            {% endif %}
+          </ul>
+        </nav>
+      </header>
+
+
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2><img src="{% static 'images/brand/brand_dark.svg' %}" class="img-fluid" alt="" width="800"></img></h2>
+          <p>Dedicated to saving animals<br />
+            that have been neglected and abused<br />
+            one by one.</p>
+          <ul class="actions special">
+            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FQX93RNTMME2E&source=url" target="_blank" class="button primary rounded-pill">Donate Now!</a></li>
           </ul>
         </div>
-      </nav>
+        <a href="#one" class="more scrolly">Learn More</a>
+      </section>
 
-    </div>
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>Arcu aliquet vel lobortis ata nisl<br />
+              eget augue amet aliquet nisl cep donec</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+          </header>
+          <ul class="icons major">
+            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+            <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+            <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper alt style2">
+        <section class="spotlight">
+          <div class="image"><img src="{% static 'images/pic01.jpg' %}" alt=""></div>
+          <div class="content">
+            <h2>Magna primis lobortis<br />
+              sed ullamcorper</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          </div>
+        </section>
+        <section class="spotlight">
+          <div class="image"><img src="{% static 'images/pic02.jpg' %}" alt=""></div>
+          <div class="content">
+            <h2>Tortor dolore feugiat<br />
+              elementum magna</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          </div>
+        </section>
+        <section class="spotlight">
+          <div class="image"><img src="{% static 'images/pic03.jpg' %}" alt=""></div>
+          <div class="content">
+            <h2>Augue eleifend aliquet<br />
+              sed condimentum</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <header class="major">
+            <h2>Accumsan mus tortor nunc aliquet</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+          </header>
+          <ul class="features">
+            <li class="icon fa-paper-plane-o">
+              <h3>Arcu accumsan</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+            <li class="icon fa-laptop">
+              <h3>Ac Augue Eget</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+            <li class="icon fa-code">
+              <h3>Mus Scelerisque</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+            <li class="icon fa-headphones">
+              <h3>Mauris Imperdiet</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+            <li class="icon fa-heart-o">
+              <h3>Aenean Primis</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+            <li class="icon fa-flag-o">
+              <h3>Tortor Ut</h3>
+              <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="wrapper style4">
+        <div class="inner">
+          <header>
+            <h2>Arcue ut vel commodo</h2>
+            <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+          </header>
+          <ul class="actions stacked">
+            <li><a href="#" class="button fit primary rounded-pill">Activate</a></li>
+            <li><a href="#" class="button fit rounded-pill">Learn More</a></li>
+          </ul>
+        </div>
+      </section>
 
     <div class="container">
 
@@ -90,21 +220,39 @@
 
     {% block modal %}{% endblock modal %}
 
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Project Pawz</li><li>Designed by: <a href="https://netengone.com">NetEngONE</a></li>
+      </ul>
+    </footer>
+
+    </div>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
       
       <!-- Bootstrap JS and its dependencies-->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      {# <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> #}
+      {# <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> #}
+      {# <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> #}
 
       <!-- Your stuff: Third-party javascript libraries go here -->
-      
 
       <!-- place project specific Javascript in this file -->
       {% compress js %}
+      <script src="{% static 'js/vendors.js' %}"></script>
+      {# <script src="{% static 'js/util.js' %}"></script> #}
+      {# <script src="{% static 'js/main.js' %}"></script> #}
       <script src="{% static 'js/project.js' %}"></script>
       {% endcompress %}
 
