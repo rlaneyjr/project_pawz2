@@ -3,7 +3,7 @@
 ////////////////////////////////
 
 // Gulp and package
-const { src, dest, parallel, series, task, watch } = require('gulp')
+const { src, dest, parallel, series, watch } = require('gulp')
 const pjson = require('./package.json')
 
 // Plugins
@@ -129,10 +129,7 @@ function styles() {
   return src(`${paths.sass}/main.scss`)
     .pipe(sass({
       includePaths: [
-        paths.bootstrapSass,
-        paths.fontawesomeSass,
-        paths.sassLibs,
-        paths.sass
+        paths.sassLibs
       ]
     }).on('error', sass.logError))
     .pipe(plumber()) // Checks for errors
@@ -145,10 +142,7 @@ function styles() {
 
 // Javascript minification
 function scripts() {
-  return src([
-    `${paths.assetsJs}/util.js`,
-    `${paths.assetsJs}/main.js`
-    ])
+  return src([paths.assetsJs])
     .pipe(concat('project.js'))
     .pipe(dest(paths.js))
     .pipe(plumber()) // Checks for errors
