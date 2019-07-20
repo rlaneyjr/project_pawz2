@@ -27,6 +27,7 @@ function pathsConfig(appName) {
   this.app = `./${pjson.name}`
   const vendorsRoot = 'node_modules'
   const pawzAssets = `${this.app}/static/assets`
+  const pawzDev = `${this.app}/static/dev`
   return {
     app: this.app,
     bootstrapSass: `${vendorsRoot}/bootstrap/scss`,
@@ -39,7 +40,7 @@ function pathsConfig(appName) {
       `${vendorsRoot}/bootstrap/dist/js/bootstrap.js`,
       `${vendorsRoot}/jquery.scrollex/jquery.scrollex.js`,
       // `${vendorsRoot}/scrolly/src/js/scrolly.js`,
-      `${pawzAssets}/js/old/jquery.scrolly.js`,
+      `${pawzDev}/js/old/jquery.scrolly.js`,
       `${vendorsRoot}/responsive-tools/src/breakpoints.js`,
       `${vendorsRoot}/responsive-tools/src/browser.js`,
       // `${pawzAssets}/js/libs/breakpoints.min.js`,
@@ -48,10 +49,18 @@ function pathsConfig(appName) {
       // `${pawzAssets}/js/libs/jquery.scrollex.min.js`,
       // `${pawzAssets}/js/libs/jquery.scrolly.min.js`,
     ],
-    assetsScss: `${pawzAssets}/sass`,
-    assetsScssLibs: `${pawzAssets}/sass/libs`,
-    assetsJs: `${pawzAssets}/js`,
-    assetsJsLibs: `${pawzAssets}/js/libs`,
+    vendorsLibs: [
+    `${vendorsRoot}/bootstrap/scss/bootstrap.scss`,
+    `${vendorsRoot}/font-awesome/scss/font-awesome.scss`,
+  ],
+    vendorsScss: `${pawzDev}/sass/vendors.scss`,
+    assetsScss: `${pawzDev}/sass`,
+    assetsScssLibs: `${pawzDev}/sass/libs`,
+    assetsJs: [
+      `${pawzDev}/js/util.js`,
+      `${pawzDev}/js/main.js`,
+    ],
+    assetsJsLibs: `${pawzDev}/js/libs`,
     css: `${this.app}/static/css`,
     sass: `${this.app}/static/sass`,
     sassLibs: `${this.app}/static/sass/libs`,
@@ -101,32 +110,17 @@ function moveFaFontsAssets() {
     .pipe(dest(`${paths.sass}/libs/fonts`))
 }
 
-function moveJs() {
-  return src(`${paths.assetsJs}/*.js`)
-    .pipe(dest(`${paths.js}`))
-}
-
-function moveSass() {
-  return src(`${paths.assetsScss}/*.scss`)
-    .pipe(dest(`${paths.sass}`))
-}
-
-function moveSassLibs() {
-  return src(`${paths.assetsScssLibs}/*.scss`)
-    .pipe(dest(`${paths.sassLibs}`))
-}
-
 // Styles autoprefixing and minification
 function styles() {
   var processCss = [
-      autoprefixer(), // adds vendor prefixes
-      // autoprefixer({browsers: ['last 2 versions']}), // adds vendor prefixes
-      pixrem(),       // add fallbacks for rem units
+    autoprefixer(), // adds vendor prefixes
+    // autoprefixer({browsers: ['last 2 versions']}), // adds vendor prefixes
+    pixrem(),       // add fallbacks for rem units
   ]
   var minifyCss = [
-      cssnano({ preset: 'default' })   // minify result
+    cssnano({ preset: 'default' })   // minify result
   ]
-  return src(`${paths.sass}/main.scss`)
+  return src(`${paths.assetsScss}/main.scss`)
     .pipe(sass({
       includePaths: [
         paths.sassLibs
@@ -140,9 +134,57 @@ function styles() {
     .pipe(dest(paths.css))
 }
 
+// Styles autoprefixing and minification
+function noscriptStyles() {
+  var processCss = [
+    autoprefixer(), // adds vendor prefixes
+    // autoprefixer({browsers: ['last 2 versions']}), // adds vendor prefixes
+    pixrem(),       // add fallbacks for rem units
+  ]
+  var minifyCss = [
+    cssnano({ preset: 'default' })   // minify result
+  ]
+  return src(`${paths.assetsScss}/noscript.scss`)
+    .pipe(sass({
+      includePaths: [
+        paths.sassLibs
+      ]
+    }).on('error', sass.logError))
+    .pipe(plumber()) // Checks for errors
+    .pipe(postcss(processCss))
+    .pipe(dest(paths.css))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(postcss(minifyCss)) // Minifies the result
+    .pipe(dest(paths.css))
+}
+
+// move the minimized versions of vendor css into our project
+function vendorStyles() {
+  var processCss = [
+    autoprefixer(), // adds vendor prefixes
+    // autoprefixer({browsers: ['last 2 versions']}), // adds vendor prefixes
+    pixrem(),       // add fallbacks for rem units
+  ]
+  var minifyCss = [
+    cssnano({ preset: 'default' })   // minify result
+  ]
+  return src(`${paths.assetsScss}/vendors.scss`)
+    .pipe(sass({
+      includePaths: [
+        paths.vendorsLibs
+      ]
+    }).on('error', sass.logError))
+    .pipe(plumber()) // Checks for errors
+    .pipe(postcss(processCss))
+    .pipe(dest(paths.css))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(postcss(minifyCss)) // Minifies the result
+    .pipe(dest(paths.css))
+}
+
 // Javascript minification
 function scripts() {
-  return src([paths.assetsJs])
+  return src(paths.assetsJs)
     .pipe(concat('project.js'))
     .pipe(dest(paths.js))
     .pipe(plumber()) // Checks for errors
@@ -160,16 +202,6 @@ function vendorScripts() {
     .pipe(uglify()) // Minifies the js
     .pipe(rename({ suffix: '.min' }))
     .pipe(dest(paths.js))
-}
-
-// move the minimized versions of vendor css into our project
-function vendorCss() {
-  return src(`${paths.vendorsCss}`)
-    .pipe(autoprefixer({browsers: ['last 2 versions']})) // Adds vendor prefixes
-    .pipe(pixrem())  // add fallbacks for rem units
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano()) // Minifies the result
-    .pipe(dest(paths.css))
 }
 
 // Image compression
@@ -217,26 +249,29 @@ function initBrowserSync() {
 // Watch
 function watchPaths() {
   watch(`${paths.sass}/*.scss`, styles).on("change", reload)
+  watch(`${paths.sassLibs}/*.scss`, styles).on("change", reload)
   watch(`${paths.templates}/**/*.html`).on("change", reload)
   watch([`${paths.js}/*.js`, `!${paths.js}/*.min.js`], scripts).on("change", reload)
 }
 
-const moveStuff = series(moveJs, moveSass, moveSassLibs,
-  parallel(
+const moveStuff = parallel(
     moveBootstrapSass,
     moveResponsiveSass,
     moveFaSass,
     moveFaFonts,
     moveFaFontsAssets
-  )
 )
 
 // Generate all assets
-const generateAssets = parallel(
-  styles,
-  scripts,
-  vendorScripts,
-  imgCompression
+const generateAssets = series(clean,
+  parallel(
+    styles,
+    noscriptStyles,
+    vendorStyles,
+    scripts,
+    vendorScripts,
+    imgCompression
+  )
 )
 
 // Set up dev environment
