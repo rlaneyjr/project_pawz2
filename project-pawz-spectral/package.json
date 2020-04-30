@@ -38,7 +38,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery.scrollex": "^0.2.1",
     "popper.js": "^1.14.6",
     "postcss-flexibility": "^2.0.0",
