@@ -17,7 +17,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.scrollex": "^0.2.1",
     "pixrem": "^5.0.0",
     "popper.js": "^1.14.7",
